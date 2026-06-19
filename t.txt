@@ -1,0 +1,4 @@
+android: https://fontawesome.com/icons/brands/solid/android?pc=rgba%280%2C%20255%2C%20120%2C%201.00%29&sc=rgba%280%2C%20255%2C%20120%2C%200.4%29
+windows: https://fontawesome.com/icons/brands/solid/windows?sz=2xl&pc=rgba%28116%2C%20192%2C%20252%2C%201%29&sc=rgba%28116%2C%20192%2C%20252%2C%200.4%29
+web: https://fontawesome.com/icons/classic/solid/code?sz=xl&pc=rgba%28226%2C%20127%2C%2049%2C%201.00%29&sc=rgba%28226%2C%20127%2C%2049%2C%200.4%29
+https://dreamina.capcut.com/ai-tool/octo/p/17bdf750-33ed-4df9-87a3-d9a5fa06c82c
