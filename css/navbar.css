@@ -81,16 +81,17 @@
 
 .menu-btn {
     display: none;
-    flex-direction: column;
+    /* flex-direction: column;
     gap: 5px;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
-.menu-btn span {
+
+/* .menu-btn span {
     width: 24px;
     height: 2px;
     background: white;
-}
+} */
 
 
 /* MOBILE MENU */
