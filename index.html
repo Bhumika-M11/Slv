@@ -15,13 +15,34 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
-
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@1&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            position: relative;
+            z-index: 5;
+        }
+        
+        .hero-title {
+            position: relative;
+            z-index: 5;
+        }
+        
+        .hero-subtitle {
+            position: relative;
+            z-index: 5;
+        }
+        
+        .hero-actions {
+            position: relative;
+            z-index: 5;
+        }
+    </style>
 
 </head>
 
@@ -40,11 +61,8 @@
             <!-- LOGO -->
 
             <a href="#hero" class="logo nav-link active">
-
-                SLV
-
+                <img src="assets/logo.png" alt="">
             </a>
-
             <!-- NAVIGATION -->
             &nbsp;
             <ul class="nav-links" id="navLinks">
@@ -149,9 +167,32 @@
     </aside>
 
     <!-- HERO -->
+    <div class="hero_vid">
+
+        <video class="hero_vid__video" autoplay muted loop playsinline preload="metadata">
+
+        <source
+            src="assets/bgc.mp4"
+            type="video/mp4">
+
+    </video>
+
+        <div class="hero_vid__overlay"></div>
+
+    </div>
 
     <main class="hero" id="hero">
+        <div id="welcomeIntro" class="welcome-intro">
 
+            <span class="welcome-line">
+        WELCOME TO
+    </span>
+
+            <h2 class="welcome-brand">
+                SLV PRO TECH
+            </h2>
+
+        </div>
         <h1 class="hero-title">
 
             FROM
@@ -161,10 +202,8 @@
             <br> WE POWER YOUR
 
             <span class="intelligent">
-
-                BUSINESS
-
-            </span>
+            BUSINESS
+        </span>
 
         </h1>
 
@@ -178,10 +217,9 @@
 
             <a href="#services" class="primary-btn">
 
-                Get Started
+            Get Started
 
-            </a>
-
+        </a>
 
         </div>
 
@@ -885,7 +923,7 @@
     <!-- JS -->
 
     <script src="js/typed.js"></script>
-
+    <script src="js/welcome.js"></script>
     <script src="js/app.js"></script>
 
 </body>

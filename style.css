@@ -70,7 +70,16 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.10), inset 0 -1px 0 rgba(255, 255, 255, 0.03), 0 10px 30px rgba(0, 0, 0, 0.28);
 }
-
+.navbar img{
+    width: 40px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 18px;
+    gap:15px;
+}
 
 /* LIQUID REFLECTION */
 
@@ -1470,5 +1479,121 @@ body.no-scroll {
     }
     .section-title {
         font-size: 30px;
+    }
+}
+
+
+/* ==========================================
+   HERO VIDEO MODULE
+========================================== */
+
+.hero_vid {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero_vid__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero_vid__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( rgba(1, 8, 20, .45), rgba(1, 8, 20, .75));
+}
+
+
+/* Smooth transition to next section */
+
+.hero_vid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient( transparent, #020817);
+}
+
+
+/* ==========================================
+   WELCOME INTRO
+========================================== */
+
+.welcome-intro {
+    font-family: 'Orbitron', sans-serif;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    pointer-events: none;
+    transition: opacity .8s ease;
+}
+
+.welcome-line {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .5rem;
+    color: #60a5fa;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeUp .8s ease forwards;
+}
+
+.welcome-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    opacity: 0;
+    animation: fadeUp .8s ease .4s forwards;
+}
+
+.welcome-intro.fade-out {
+    opacity: 0;
+}
+
+.welcome-brand.dissolve {
+    animation: dissolveDots 1.5s forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dissolveDots {
+    0% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+    30% {
+        filter: blur(2px);
+    }
+    60% {
+        letter-spacing: .6rem;
+        filter: blur(8px);
+    }
+    100% {
+        opacity: 0;
+        filter: blur(25px);
+        transform: scale(1.15);
     }
 }
