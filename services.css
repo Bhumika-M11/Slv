@@ -840,6 +840,28 @@
     .industry-card{
         padding:22px;
     }
+
+    .current-work{
+
+        padding:80px 6%;
+    }
+
+    .work-card{
+
+        padding:60px 30px;
+
+        border-radius:25px;
+    }
+
+    .work-card h2{
+
+        font-size:36px;
+    }
+
+    .work-card p{
+
+        font-size:15px;
+    }
 }
 
 /* ==========================================
