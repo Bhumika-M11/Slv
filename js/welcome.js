@@ -58,7 +58,7 @@ document.addEventListener(
             heroSubtitle.style.opacity = "1";
             heroActions.style.opacity = "1";
 
-        }, 10000);
+        }, 3000);
 
     }
 );
